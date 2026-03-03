@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Pro Task Manager</h1>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <div class="input-section">
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <input type="datetime-local" id="reminderInput">
+    <button id="addBtn">Add</button>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search...">
+
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="completed">Completed</button>
+      <button data-filter="pending">Pending</button>
+      <button data-filter="overdue">Overdue</button>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <ul id="taskList"></ul>
+
+  <p id="emptyState">No tasks available</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
